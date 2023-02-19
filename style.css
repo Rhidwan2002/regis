@@ -1,0 +1,103 @@
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("/img/R.jpg");
+  background-position: center;
+  background-size: cover;
+}
+h2 {
+  margin: 40px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 2px 4px #000;
+  animation: color 8s infinite;
+  text-align: center;
+}
+
+.from-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgb(15, 12, 12);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* input */
+.input-group {
+  position: relative;
+}
+.input {
+  border: solid 1.5px #160b0b;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #141212;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-label {
+  position: absolute;
+  left: 15px;
+  color: #080606;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:focus,
+input:valid {
+  outline: none;
+  border: 1.5px solid #0c0d0f;
+}
+.input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #f1d4d4;
+  padding: 0 0.2em;
+  color: #2196f3;
+}
+
+/* tombol buttom */
+.btn {
+  margin: 2em;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 10px;
+  background-image: linear-gradient(45deg, #21d810 0%, #13e647 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: width 0.5s;
+  border-radius: 0.5s;
+}
+/*.btn * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s;
+}
+.btn i {
+  opacity: 0;
+}
+.btn:focus {
+  width: 50px;
+  background-image: linear-gradient(45deg, #111414 0%, #92fe9d 100%);
+  border-radius: 50px;
+}
+.btn:focus span {
+  opacity: 0;
+}
+.btn:focus i {
+  opacity: 1;
+  transition-delay: 0.5s;
+} */
